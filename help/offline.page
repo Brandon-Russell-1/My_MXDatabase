@@ -1,0 +1,38 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="offline">
+<info>
+  <link type="guide" xref="index"/>
+</info>
+<title>Network Outage Fallback</title>
+	<section title="AAircraft">
+		<title>Add Aircraft</title>
+		<p>
+			When the A4 page is not loading you can use the Add Aircraft screen (<guiseq><gui>File</gui> <gui>Manual</gui><gui>Entry</gui><gui>Add Aircraft</gui></guiseq>) to add an aircraft to the database. When adding aircraft manually it is very important to enter the <screen>Tail Number</screen>, <screen>MDS</screen>, <screen>Block In Time</screen>, and <screen>Spot</screen> exactly like the examples on the form. Falure to do this could cause errors when the network comes back online.
+		</p>	
+	</section>
+	
+	<section title="AJobs">
+		<title>Add Jobs</title>
+		<p>
+			Adding Jobs is very simular to adding an aircarft. Select the File menu entry (<guiseq><gui>File</gui><gui>Manual Entry</gui><gui>Add Job</gui></guiseq>), then fill out the form. Remember to select the correct aircraft in the job down menu!
+		</p>	
+	</section>
+
+	<section title="DJobs">
+		<title>Delete Jobs</title>
+		<p>
+			Sometimes jobs are added twice. This is a technical anomaly, that we are still trying to work out. When it happens you can get ride of the jobs quick and easy. On the next refresh the job will be reloaded and only one will be loaded. 
+		</p>	
+	</section>
+	
+</page>
+
+<!-- Each Section Template =======
+	<section title="">
+		<title></title>
+		<p>
+			
+		</p>	
+	</section>
+===============================-->

@@ -1,0 +1,11 @@
+<chapter><title>Automatic Endings</title>
+
+<para>If things are opened at some point they have to be closed. The A4 does not give a list of closed jobs, so we had to figure out a way to do with but still allow for jobs to be reopened if they needed to be. The solution that we came up with was both complicated and not. Its a two step process that first identifies what jobs are open and then closes whatever is not.</para>
+
+<para>When looking at the code this can be a little bit confusing but in plan English it works as follows. When we starts to look at the code for jobs (regexp # 2 and 3), we check a box on the SQL server that says the job is a current job on the A4 page. After every job has been added it looks at the whole list of jobs for every plane on station and any job without a current check box filled is closed out, and the current check box is reset for the next refresh. While this seems like a lot of work it gives us the ability to reopen closed jobs, and insure that the only way a job will show as closed is if it's not showing up on the A4 page.</para>
+
+<para>While we don't depart planes automatically it's not to say that we couldn't. The reason that we don't is so that MOC controllers are visually reminded that they need to enter delay information into the system. Once an aircraft is no longer shown on the A4 page (we use a similar check box system for this as well) a picture on a plane taking off is displayed on the screen notifying the users its ready to be departed. Once the depart button is pressed the database on the back end of the application moves all data associated with that aircraft to an archive table where it will remain. This is however only possible when the aircraft is no longer on the A4 page.</para>
+
+<warning>If you are unable to depart an aircraft that is not on the A4 page contact the database administrator or the MOC superintendent. They will be able to force it to depart.</warning>
+
+</chapter>

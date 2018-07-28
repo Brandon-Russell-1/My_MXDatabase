@@ -1,0 +1,7 @@
+*.sln
+*.suo
+MXDatabase/bin/*
+*~
+MXDatabase.suo
+MXDatabase/obj/*
+MXDatabase/obj/Debug/*

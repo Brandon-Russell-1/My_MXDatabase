@@ -1,0 +1,17 @@
+
+<chapter><title>Automated Data Loading</title>
+<para>This application, like mentioned in the introduction, is requires someone to be running it 24/7 in order for it to function properly. Due to security mesuers the system that we pull data from (the A4 Aircraft Status web page) requires user certificates from a CAC card, so a user has to provide the certificates in order for this process to work.</para>
+
+<para>Automated data loading is the main function of this application, removing necessity of double entry like past systems had. We do this by a set of Regular Expressions (regexp) that after pulling down the web page are able to break the HTML up into chunks of useful information. 3 regexps are used to make this process possible</para>
+
+<para>The first thing that we need to find on the page is an Aircraft tail number, and other information about the plane. For each aircraft on station, we can pull the tail number, mission number, MSD, ETIC, fuel load, LOX, LN2, Preflight time, and more from this section. All of this data ends up being displayed on the top block of the database for each selected plane.</para>
+
+<para>The next regexp is used to find the pacer job. We have to look for the pacer by itself because the HTML code used to display it is a little different then the rest of the jobs on the page. Once found it loads the JCN, WUC, WES, the discrepancy, and symbol. The final step is to collect each of the reaming jobs for the aircraft, and it pulls all the same data that a pacer job would.</para>
+
+<para>While sections about explain most of how we get data we can also pull data in from 2 other sources GDSS, and the European Weather Center. The first one is not automatic and will be covered in another section. However when an aircraft is arrived on station it looks at the list that you copied from GDSS and if it finds an aircraft with the same tail number, and mission number it will copy the next and last ICAO codes and well as the mission priority of the list before deleting it. Weather is also automatically looked at every 5-7 minutes but warnings are not automatically loaded, instead the system gives you a warning that there is a warning and that you should check it (this is done to get your attention and make sure a weather warning is not missed).</para>
+
+<para>Tieing all this together, when an aircraft shows up on the A4 page with a block-in time, and spot the system imports that aircraft into the database. It then pulls all the jobs on the A4 page. After a job is entered into Ge081 it will show up on the A4 page and on the next refresh it will be added to the database. Each time a refresh is run the data in the application is checked against whats on the A4 page and anything different changes.<para>
+
+<note>To learn more about the actual technical aspects of this checkout the code comments on github</note>
+
+</chapter>

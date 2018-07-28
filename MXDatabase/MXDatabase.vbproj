@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C444389-A023-483F-AF8B-45327BC01F69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MXDatabase.My.MyApplication</StartupObject>
+    <RootNamespace>MXDatabase</RootNamespace>
+    <AssemblyName>MXDatabase</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Airplane.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>D3D92C03033C038D5D21E5ED9B28EBC75CF6459A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>MXDatabase_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <PublishUrl>\\rta-fs-02\725AMS\MXA\LG ADMIN\MxDatabase\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\rta-fs-02\725AMS\MXA\LG ADMIN\MxDatabase\</UpdateUrl>
+    <SupportUrl>\\rta-fs-02\725AMS\MXA\LG ADMIN\MxDatabase\Help\index.html</SupportUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.5.1.7</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MXDatabase.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MXDatabase.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A4Browse.Designer.vb">
+      <DependentUpon>A4Browse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A4Browse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSection.Designer.vb">
+      <DependentUpon>AdminSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clsGhost.vb" />
+    <Compile Include="clsPac.vb" />
+    <Compile Include="clsSndChanB.vb" />
+    <Compile Include="ErrorLog.vb" />
+    <Compile Include="acftAdd.Designer.vb">
+      <DependentUpon>acftAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="acftAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jobAdd.Designer.vb">
+      <DependentUpon>jobAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jobAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame.Designer.vb">
+      <DependentUpon>frmGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNameEntry.designer.vb">
+      <DependentUpon>frmNameEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNameEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobEdit.Designer.vb">
+      <DependentUpon>JobEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manAcftEdit.Designer.vb">
+      <DependentUpon>manAcftEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manAcftEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRTEdit.Designer.vb">
+      <DependentUpon>MRTEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MRTEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRTMain.Designer.vb">
+      <DependentUpon>MRTMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MRTMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MySqlBuilder.vb" />
+    <Compile Include="RemoveSpecialCharacters.vb" />
+    <Compile Include="Reports\Active48hr.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Active48hr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\ActiveAircraftReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActiveAircraftReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AddSOEForm.Designer.vb">
+      <DependentUpon>AddSOEForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddSOEForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AircraftReportSelector.Designer.vb">
+      <DependentUpon>AircraftReportSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AircraftReportSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AddTurnoverForm.Designer.vb">
+      <DependentUpon>AddTurnoverForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddTurnoverForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Archive48hr.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Archive48hr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ArchivedAircraftEdit.Designer.vb">
+      <DependentUpon>ArchivedAircraftEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArchivedAircraftEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ArchivedAircraftReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivedAircraftReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\JOBSearch.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JOBSearch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MRTAll.vb">
+      <DependentUpon>MRTAll.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\FuelAll.vb">
+      <DependentUpon>FuelAll.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\Expeditor.vb">
+      <DependentUpon>Expeditor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ExpeditorBlank2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpeditorBlank2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FuelCurrent.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuelCurrent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FuelLast30.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuelLast30.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\G1TurnoverWOGENWUC.vb">
+      <DependentUpon>G1TurnoverWOGENWUC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\G1TurnoverPacerOnly.vb">
+      <DependentUpon>G1TurnoverPacerOnly.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\G1Turnover.vb">
+      <DependentUpon>G1Turnover.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\G1NoTurnoverWOGENWUC.vb">
+      <DependentUpon>G1NoTurnoverWOGENWUC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="EquipStatus.Designer.vb">
+      <DependentUpon>EquipStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EquipStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralTurnover.Designer.vb">
+      <DependentUpon>GeneralTurnover.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralTurnover.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InbdSheet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InbdSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\MorningSheet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorningSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="MorningSheetEdit.Designer.vb">
+      <DependentUpon>MorningSheetEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MorningSheetEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MxDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MxDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MxDatabaseDataSet.vb">
+      <DependentUpon>MxDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\MRTCurrent.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRTCurrent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MRTLast30.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRTLast30.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SOESearch.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SOESearch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SOEJCNSearch.Designer.vb">
+      <DependentUpon>SOEJCNSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SOEJCNSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheReportViewer.Designer.vb">
+      <DependentUpon>TheReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TheReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A4Browse.resx">
+      <DependentUpon>A4Browse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSection.resx">
+      <DependentUpon>AdminSection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame.resx">
+      <DependentUpon>frmGame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNameEntry.resx">
+      <DependentUpon>frmNameEntry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobEdit.resx">
+      <DependentUpon>JobEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRTEdit.resx">
+      <DependentUpon>MRTEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRTMain.resx">
+      <DependentUpon>MRTMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Active48hr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Active48hr.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ActiveAircraftReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ActiveAircraftReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSOEForm.resx">
+      <DependentUpon>AddSOEForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTurnoverForm.resx">
+      <DependentUpon>AddTurnoverForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AircraftReportSelector.resx">
+      <DependentUpon>AircraftReportSelector.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Archive48hr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Archive48hr.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchivedAircraftEdit.resx">
+      <DependentUpon>ArchivedAircraftEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ArchivedAircraftReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ArchivedAircraftReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\JOBSearch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>JOBSearch.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MRTAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MRTAll.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FuelAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FuelAll.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Expeditor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Expeditor.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ExpeditorBlank2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExpeditorBlank2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FuelCurrent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FuelCurrent.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FuelLast30.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FuelLast30.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\G1TurnoverWOGENWUC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G1TurnoverWOGENWUC.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\G1TurnoverPacerOnly.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G1TurnoverPacerOnly.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\G1Turnover.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G1Turnover.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\G1NoTurnoverWOGENWUC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G1NoTurnoverWOGENWUC.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipStatus.resx">
+      <DependentUpon>EquipStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralTurnover.resx">
+      <DependentUpon>GeneralTurnover.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InbdSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InbdSheet.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MorningSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MorningSheet.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MorningSheetEdit.resx">
+      <DependentUpon>MorningSheetEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MRTCurrent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MRTCurrent.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MRTLast30.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MRTLast30.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SOESearch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SOESearch.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SOEJCNSearch.resx">
+      <DependentUpon>SOEJCNSearch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheReportViewer.resx">
+      <DependentUpon>TheReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="MxDatabaseDataSet.xsc">
+      <DependentUpon>MxDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MxDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MxDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MxDatabaseDataSet.xss">
+      <DependentUpon>MxDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MXDatabase_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Airplane.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="acftAdd.resx">
+      <DependentUpon>acftAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jobAdd.resx">
+      <DependentUpon>jobAdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manAcftEdit.resx">
+      <DependentUpon>manAcftEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacMan.ico" />
+    <EmbeddedResource Include="Resources\GhostBlue.bmp" />
+    <EmbeddedResource Include="Resources\GhostCyanDown.bmp" />
+    <EmbeddedResource Include="Resources\GhostCyanLeft.bmp" />
+    <EmbeddedResource Include="Resources\GhostCyanRight.bmp" />
+    <EmbeddedResource Include="Resources\GhostCyanUP.bmp" />
+    <EmbeddedResource Include="Resources\GhostEaten.wav" />
+    <EmbeddedResource Include="Resources\GhostOrangeDown.bmp" />
+    <EmbeddedResource Include="Resources\GhostOrangeLeft.bmp" />
+    <EmbeddedResource Include="Resources\GhostOrangeRight.bmp" />
+    <EmbeddedResource Include="Resources\GhostPinkDown.bmp" />
+    <EmbeddedResource Include="Resources\GhostPinkLeft.bmp" />
+    <EmbeddedResource Include="Resources\GhostPinkRight.bmp" />
+    <EmbeddedResource Include="Resources\GhostPinkUP.bmp" />
+    <EmbeddedResource Include="Resources\GhostRedDown.bmp" />
+    <EmbeddedResource Include="Resources\GhostRedLeft.bmp" />
+    <EmbeddedResource Include="Resources\GhostRedRight.bmp" />
+    <EmbeddedResource Include="Resources\GhostRedUP.bmp" />
+    <EmbeddedResource Include="Resources\Intro.wav" />
+    <EmbeddedResource Include="Resources\Invincible.wav" />
+    <EmbeddedResource Include="Resources\Maze.bmp" />
+    <EmbeddedResource Include="Resources\PacDown01.bmp" />
+    <EmbeddedResource Include="Resources\PacDown02.bmp" />
+    <EmbeddedResource Include="Resources\PacDown03.bmp" />
+    <EmbeddedResource Include="Resources\PacEaten.wav" />
+    <EmbeddedResource Include="Resources\PacLeft01.bmp" />
+    <EmbeddedResource Include="Resources\PacLeft02.bmp" />
+    <EmbeddedResource Include="Resources\PacLeft03.bmp" />
+    <EmbeddedResource Include="Resources\PacNeutral.bmp" />
+    <EmbeddedResource Include="Resources\PacRight01.bmp" />
+    <EmbeddedResource Include="Resources\PacRight02.bmp" />
+    <EmbeddedResource Include="Resources\PacRight03.bmp" />
+    <EmbeddedResource Include="Resources\PacTitle.bmp" />
+    <EmbeddedResource Include="Resources\PacUP01.bmp" />
+    <EmbeddedResource Include="Resources\PacUP02.bmp" />
+    <EmbeddedResource Include="Resources\PacUP03.bmp" />
+    <EmbeddedResource Include="Resources\PelletEat1.wav" />
+    <EmbeddedResource Include="Resources\PelletEat2.wav" />
+    <EmbeddedResource Include="Resources\Pill.bmp" />
+    <EmbeddedResource Include="Resources\PowerPill.bmp" />
+    <EmbeddedResource Include="Resources\Siren.wav" />
+    <EmbeddedResource Include="Resources\GhostOrangeUP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Help\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

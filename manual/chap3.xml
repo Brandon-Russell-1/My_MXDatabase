@@ -1,0 +1,13 @@
+<chapter><title>Manual Addition</title>
+
+<para>In the first section we talked about automatic loading of data. Unfortunately due to the architecture of the system we can't pull all the data that we need so some data still needs to be added by hand.</para>
+
+<para>The largest burden on the controller in this process is entering corrective actions for jobs. Because we don't actually have data for closed entires the system requires that the user manually adds the job to the system. When an aircraft is departed it checks to make sure all jobs (with WUC not starting with 0, 11, or 12) have corrective actions. If you are lacking corrective actions the system will prompt you to enter X amount of corrective actions.</para>
+
+<note>A few other areas also require manual entires, they include DST, fuel start and stop times, and weather warning.</note>
+
+
+<para>While the driving force for this system was to cut out double entry the reason for it was to free up time for SOE entries. Ge081 keeps a much better history of jobs then we can or ever will be able to but personal turnover notes and SOE entries can not be stored in that system.</para>
+
+<para>Two systems of notes are available in this application each for it's own purpose. The SOE system is available to track the chain of events on any given aircraft. This system will mostly be accessed by MOC and is available in the tab group under the aircraft info section. While all turnover notes are stored in the same table on the server, some are aircraft specific and others are general notes. General notes can be found under the File --> Open menu item, or by right clicking the screen and selecting "General Turnover"</para>
+</chapter>

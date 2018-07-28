@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<!DOCTYPE book [
+<!ENTITY fwd SYSTEM "fwd.xml">
+<!ENTITY chap1 SYSTEM "chap1.xml">
+<!ENTITY chap2 SYSTEM "chap2.xml">
+<!ENTITY chap3 SYSTEM "chap3.xml">
+<!ENTITY chap4 SYSTEM "chap4.xml">
+<!ENTITY chap5 SYSTEM "chap5.xml">
+<!ENTITY chap6 SYSTEM "chap6.xml">
+<!ENTITY chap7 SYSTEM "chap7.xml">
+]>
+
+<book xmlns="http://docbook.org/ns/docbook" version="5.0">
+<info>
+	<title>MX Database: The Definitive Guide</title>
+	<author><firstname>Zachary</firstname><surname>Oglesby</surname></author>
+	<copyright><year>2010</year></copyright>
+</info>
+<!-- <dedication>
+<para>This book is dedicated to you.
+</para>
+</dedication> -->
+<preface>
+&fwd;
+</preface>
+&chap1;
+&chap1-1;
+&chap2;
+&chap3;
+&chap4;
+&chap5;
+&chap6;
+&chap7;
+</book>

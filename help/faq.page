@@ -1,0 +1,63 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+      id="faq">
+<info>
+  <link type="guide" xref="index"/>
+</info>
+<title>FAQ</title>
+	<section title="umm">
+		<title>What is this?</title>
+		<p>
+			This is an FAQ page, if you are asking about the application it's the third generation 				of the 725th AMS's Maintenance Database. It is also the first to be written in 				something other then Microsoft Access, so it may look very different to you.
+		</p>
+	</section>
+
+	<section title="how">
+		<title>How can I get it?</title>
+		<p> <!-- This link needs changed if you are not at Rota Spain -->
+			You can get this wonderful product by visiting the install page 
+			<link href="\\rta-fs-02\725ams\Logistics\MxDatabase\publish.htm">here</link>. After that you 				will never have to do anything again, it will simply update itself automatically.
+		</p>	
+	</section>
+	
+	<section title="diff">
+		<title>What's the difference between MOC vs Golf 1?</title>
+		<p>
+			Logging into the database as MOC allows you to pull data from the A4 website into the 				database. Golf 1 only pulls data for comparison.
+		</p>	
+	</section>	
+
+	<section title="cac">
+		<title>Why am I bening asked for my CAC card pin?</title>
+		<p>
+			This application pulls data directly from the A4 page, in order to do that we need to use 				your certificates to login. This process is 100% safe, we are using a built in feature of 				Windows to do this.	
+		</p>	
+	</section>
+	
+	<section title="updates">
+		<title>Why am I bening asked about updates?</title>
+		<p>
+			Unlike the old databases each user install's an instance of the frontend on their computer. 				Each time you start the application it checks with a server to make sure you are running the 				most up to date version. This way we can make changes as often as needed and don't have to 				worry about users running older versions.
+		</p>	
+	</section>
+	
+	<section title="ssl">
+		<title>What is this SSL Error?</title>
+		<p>
+			Every now and then you need to reenter your CAC pin to keep your connection active. If you are not around or don't see the dialog box your computer will no longer be updating and you will see a box like shown below. Just follow the instruction and all will be well.
+		</p>	
+		<figure id="menubar_figure">
+			<media type="image" src="img/SSLError.jpg" width="329.3" height="513" />
+			<desc>SSL Error</desc>
+   		</figure>
+	</section>	
+	
+</page>
+<!-- Each Section Template =======
+	<section title="">
+		<title></title>
+		<p>
+			
+		</p>	
+	</section>
+===============================-->
